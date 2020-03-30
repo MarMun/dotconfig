@@ -1,7 +1,6 @@
 /******************************************************************************
  * ROFI Color theme
- * User: MarMun
- * Copyright: Martin Munstermann
+ * BASED ON 'blue.rasi' by Dave Davenport
  ******************************************************************************/
 
 * {
@@ -9,6 +8,7 @@
     
     red:                         rgba ( 249, 38, 114, 100 % );
     blue:                        rgba ( 0, 102, 204, 100 % );
+    pink:                        rgba ( 158, 111, 254, 100 % );
     magenta:                     rgba ( 158, 111, 254, 100 % );
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );

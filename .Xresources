@@ -1,5 +1,5 @@
 URxvt*cursorBlink: true
-URxvt*font: xft:monospace:size=12
+URxvt*font: xft:monospace:size=11
 URxvt*depth: 32
 URxvt*background: #0d0f31
 URxvt*foreground: #f3f4f5

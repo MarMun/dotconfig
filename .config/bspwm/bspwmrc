@@ -16,6 +16,10 @@ compton --config ~/.config/compton/compton.conf &
 killall feh
 feh --bg-scale ~/Pictures/ecopetit.cat-city-wallpaper-20102.png &
 
+# bar
+killall polybar
+polybar --config=/home/martin/.config/polybar/config example &
+
 # monitor
 bspc monitor -d I II III IV V VI VII VIII IX X
 

@@ -33,10 +33,11 @@ bspc config gapless_monocle     true
 
 # window rules
 bspc rule -a URxvt:scratchtty state=floating sticky=on
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Firefox desktop='^2'
+bspc rule -a Code desktop='^2'
+bspc rule -a Firefox desktop='^3'
+bspc rule -a Inkscape desktop='^7' rectangle=1600x1200+0+0 state=floating follow=on focus=on center=on
+bspc rule -a Gimp desktop='^8' rectangle=1600x1200+0+0 state=floating follow=on focus=on center=on
 bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # window colors

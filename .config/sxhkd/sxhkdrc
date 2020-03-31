@@ -8,7 +8,7 @@ super + Return
 
 # terminal emulator (floating)
 super + shift + Return
-	urxvt -name floatterm
+	urxvt -name scratchtty
 
 # program launcher
 super + @space

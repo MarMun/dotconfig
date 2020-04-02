@@ -2,6 +2,10 @@
 # wm independent hotkeys
 #
 
+# predefined workspaces
+super + F1
+	/home/martin/.config/bspwm/scripts/code.sh
+
 # terminal emulator
 super + Return
 	urxvt

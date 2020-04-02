@@ -30,8 +30,8 @@ URxvt*internalBorder: 16
 *.color11:      #feed6c
 
 ! blue
-*.color4:       #0066cc
-*.color12:      #333399
+*.color4:       #46bdff
+*.color12:      #96A1FF
 
 ! magenta
 *.color5:       #8c54fe

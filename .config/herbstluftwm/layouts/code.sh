@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 
-# Requirement: bash >= 4.0 (because of the usage of $BASHPID)
+# How to find frame index to use in rule
+# via 'hc layout' output
+#
+# Example output:
+# ╾─┐ horizontal 65% selection=0 <------ Note!
+#   ├─┐ horizontal 45% selection=0 <------ Note!
+#   │ ├─┐ vertical 50% selection=0 <------ Note!
+#   │ │ ├─╼ vertical:
+#   │ │ └─╼ vertical:
+#   │ └─╼ vertical:
+#   └─╼ vertical:
+#
+# Example frame index: 000
 
 spawn_with_rules() {
     (
@@ -12,26 +24,20 @@ spawn_with_rules() {
 }
 
 herbstclient load 2 "$(< ~/.config/herbstluftwm/layouts/code.layout)"
-# herbstclient use_index 1
-
-# spawn an xterm with uname info, but not where the focus is
+herbstclient use_index 1
 
 # LEFT TOP
-# RULES=( tag=2 index=00 focus=on )
-# spawn_with_rules urxvt
+RULES=( tag=2 index=000 focus=off )
+spawn_with_rules urxvt -e nano lefttop.txt
 
 # LEFT BOTTOM
-RULES=( tag=2 index='/' focus=on )
-spawn_with_rules urxvt
+RULES=( tag=2 index=001 focus=off )
+spawn_with_rules urxvt -e nano leftbottom.txt
 
 # CENTER
-# RULES=( tag=2 index=01 focus=on )
-# spawn_with_rules urxvt
+RULES=( tag=2 index=011 focus=off )
+spawn_with_rules code
 
 # RIGHT
-# RULES=( tag=2 index=1 focus=on )
-# spawn_with_rules urxvt
-
-# spawn an xterm in pseudotile mode
-# RULES=( pseudotile=on focus=on )
-# spawn_with_rules xterm
+RULES=( tag=2 index=111 focus=off )
+spawn_with_rules firefox

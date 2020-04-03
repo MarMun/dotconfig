@@ -33,7 +33,7 @@ hc keybind $Mod-Return      spawn urxvt
 hc keybind $Mod-x           spawn rofi -show run -theme martin
 
 # load layouts
-hc keybind $mod-F1          spawn ~/.config/herbstluftwm/layouts/code.sh
+hc keybind $Mod-F1          spawn ~/.config/herbstluftwm/layouts/code.sh
 
 # basic movement
 # focusing clients

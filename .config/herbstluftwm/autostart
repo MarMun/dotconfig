@@ -57,8 +57,8 @@ hc keybind $Mod-Shift-k     shift up
 hc keybind $Mod-Shift-l     shift right
 
 # showing frames
-hc keybind $Mod-Control-f   hc set frame_transparent_width 5
-hc keybind $Mod-Shift-f     hc set frame_transparent_width 0
+hc keybind $Mod-Control-f       set frame_transparent_width 2
+hc keybind $Mod-Shift-f         set frame_transparent_width 0
 
 # splitting frames
 # create an empty frame at the specified direction
